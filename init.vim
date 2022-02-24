@@ -14,6 +14,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'sheerun/vim-polyglot'
+Plug 'f-person/git-blame.nvim'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -23,14 +24,13 @@ endif
 
 call plug#end()
 
+colorscheme jellybeans
+
 set number
 syntax on
 set mouse=a
 set autochdir
 set autowriteall
-
-colorscheme jellybeans
-
 set showtabline=2
 set tabstop=4
 set shiftwidth=4
@@ -61,8 +61,8 @@ let g:airline#extensions#tabline#enabled = 1
 
 set updatetime=100
 let g:signify_sign_add               = '+'
-let g:signify_sign_delete            = '_'
-let g:signify_sign_delete_first_line = '‾'
+let g:signify_sign_delete            = '-'
+let g:signify_sign_delete_first_line = '-'
 let g:signify_sign_change            = '~'
 highlight clear SignColumn
 highlight SignifySignAdd    ctermfg=green  guifg=#00ff00 cterm=NONE gui=NONE
@@ -74,4 +74,4 @@ augroup TerminalStuff
   autocmd TermOpen * setlocal nonumber norelativenumber
 augroup END
 
-
+let g:gitblame_message_template = '<summary> • <date> • <author>'
