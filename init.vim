@@ -14,6 +14,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'f-person/git-blame.nvim'
+Plug 'kdheepak/lazygit.nvim'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -52,6 +53,8 @@ let g:loaded_matchparen=1
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <C-c> :term<CR>
+
+nnoremap <C-l> :LazyGit<CR>
 
 set termguicolors
 lua << EOF
