@@ -21,6 +21,7 @@ Plug 'https://github.com/romgrk/fzy-lua-native.git'
 Plug 'https://github.com/nixprime/cpsm.git'
 Plug 'https://github.com/sharkdp/fd.git'
 Plug 'rinx/nvim-minimap'
+Plug 'voldikss/vim-floaterm'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -84,6 +85,21 @@ require("bufferline").setup{}
 EOF
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='tomorrow'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.dirty='⚡'
 
 set updatetime=100
 let g:signify_sign_add               = '+'
@@ -165,3 +181,5 @@ call wilder#set_option('renderer', wilder#renderer_mux({
       \ '/': s:wildmenu_renderer,
       \ 'substitute': s:wildmenu_renderer,
       \ }))
+
+autocmd FileType java nnoremap <buffer> <F5> :w<esc>:FloatermNew java %<CR>
