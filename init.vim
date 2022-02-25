@@ -51,6 +51,7 @@ let g:loaded_matchparen=1
 
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
+nnoremap <C-c> :term<CR>
 
 set termguicolors
 lua << EOF
