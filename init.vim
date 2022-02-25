@@ -13,7 +13,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tanvirtin/monokai.nvim'
-Plug 'sheerun/vim-polyglot'
 Plug 'f-person/git-blame.nvim'
 
 if has('nvim') || has('patch-8.0.902')
@@ -35,6 +34,7 @@ set showtabline=2
 set tabstop=4
 set shiftwidth=4
 set smartindent
+set cursorline
 
 nmap <F6> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable="+"
