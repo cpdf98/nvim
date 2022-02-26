@@ -1,3 +1,4 @@
+""Plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -46,9 +47,12 @@ else
 endif
 
 call plug#end()
+"End plugins
 
-colorscheme jellybeans
+" Coloschemes
+colorscheme jellybeans 
 
+" General settings
 set number
 syntax on
 set mouse=a
@@ -60,11 +64,13 @@ set shiftwidth=4
 set smartindent
 set cursorline
 
+" Nerd tree settings
 nmap <F6> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 let g:NERDTreeGitStatusWithFlags = 1
 
+"Matching symbols
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
@@ -73,24 +79,26 @@ inoremap { {}<left>
 inoremap <S-Tab> <C-d>
 let g:loaded_matchparen=1
 
+" Custom keybindings
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
-nnoremap <C-c> :term<CR>
-
+nnoremap <C-c> :FloatermNew<CR>
 nnoremap <C-l> :LazyGit<CR>
 
+" No idea what this one does
 set termguicolors
 lua << EOF
 require("bufferline").setup{}
 EOF
 
+" Cusomize airlines
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='tomorrow'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 
-" powerline symbols
+" airline symbols
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -101,6 +109,7 @@ let g:airline_symbols.linenr = '☰'
 let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 
+" Gitgutter
 set updatetime=100
 let g:signify_sign_add               = '+'
 let g:signify_sign_delete            = '-'
@@ -183,3 +192,8 @@ call wilder#set_option('renderer', wilder#renderer_mux({
       \ }))
 
 autocmd FileType java nnoremap <buffer> <F5> :w<esc>:FloatermNew java %<CR>
+autocmd FileType c nnoremap <buffer> <F5> :w<esc>:FloatermNew gcc % && ./a.out && rm a.out<CR>
+autocmd FileType cpp nnoremap <buffer> <F5> :w<esc>:FloatermNew g++ % && ./a.out && rm a.out<CR>
+autocmd FileType python nnoremap <buffer> <F5> :w<esc>:FloatermNew python3 %<CR>
+autocmd FileType cs nnoremap <buffer> <F5> :w<esc>:FloatermNew mcs %<CR>
+let g:floaterm_autoclose=0
