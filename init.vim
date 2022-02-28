@@ -84,6 +84,8 @@ nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <C-c> :FloatermNew<CR>
 nnoremap <C-l> :LazyGit<CR>
+nnoremap <F4> :w<CR>
+nnoremap <F7> :bd<CR>
 
 " No idea what this one does
 set termguicolors
