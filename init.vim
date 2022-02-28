@@ -1,4 +1,4 @@
-""Plugins
+"Plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/vim-airline/vim-airline'
@@ -11,9 +11,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'patstockwell/vim-monokai-tasty'
-Plug 'tanvirtin/monokai.nvim'
 Plug 'f-person/git-blame.nvim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'https://github.com/roxma/nvim-yarp.git'
@@ -21,8 +18,8 @@ Plug 'https://github.com/lambdalisue/nerdfont.vim.git'
 Plug 'https://github.com/romgrk/fzy-lua-native.git'
 Plug 'https://github.com/nixprime/cpsm.git'
 Plug 'https://github.com/sharkdp/fd.git'
-Plug 'rinx/nvim-minimap'
 Plug 'voldikss/vim-floaterm'
+
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -99,6 +96,7 @@ let g:airline_theme='tomorrow'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
+let g:airline#extensions#tabline#enabled = 1
 
 " airline symbols
 let g:airline_left_sep = ''
