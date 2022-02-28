@@ -6,7 +6,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -19,7 +18,9 @@ Plug 'https://github.com/romgrk/fzy-lua-native.git'
 Plug 'https://github.com/nixprime/cpsm.git'
 Plug 'https://github.com/sharkdp/fd.git'
 Plug 'voldikss/vim-floaterm'
-
+Plug 'https://github.com/xiyaowong/nvim-cursorword.git'
+Plug 'https://github.com/alec-gibson/nvim-tetris.git'
+Plug 'https://github.com/seandewar/nvimesweeper.git'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -197,3 +198,4 @@ autocmd FileType cpp nnoremap <buffer> <F5> :w<esc>:FloatermNew g++ % && ./a.out
 autocmd FileType python nnoremap <buffer> <F5> :w<esc>:FloatermNew python3 %<CR>
 autocmd FileType cs nnoremap <buffer> <F5> :w<esc>:FloatermNew mcs %<CR>
 let g:floaterm_autoclose=0
+
