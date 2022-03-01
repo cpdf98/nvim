@@ -21,6 +21,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'https://github.com/xiyaowong/nvim-cursorword.git'
 Plug 'https://github.com/alec-gibson/nvim-tetris.git'
 Plug 'https://github.com/seandewar/nvimesweeper.git'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/rcarriga/nvim-notify.git'
 
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
@@ -87,9 +89,6 @@ nnoremap <F7> :bd<CR>
 
 " No idea what this one does
 set termguicolors
-lua << EOF
-require("bufferline").setup{}
-EOF
 
 " Cusomize airlines
 let g:airline#extensions#tabline#enabled = 1
@@ -199,3 +198,28 @@ autocmd FileType python nnoremap <buffer> <F5> :w<esc>:FloatermNew python3 %<CR>
 autocmd FileType cs nnoremap <buffer> <F5> :w<esc>:FloatermNew mcs %<CR>
 let g:floaterm_autoclose=0
 
+"Executes code for lua-based plugins
+lua << EOF
+	--bufferline
+	require("bufferline").setup{}
+
+	--config settings for nvim-notify
+	require("notify").setup({
+	  stages = "fade_in_slide_out",
+	  on_open = nil,
+	  on_close = nil,
+	  render = "default",
+	  timeout = 5000,
+	  max_width = nil,
+	  max_height = nil,
+	  background_colour = "Normal",
+	  minimum_width = 50,
+	  icons = {
+		ERROR = "",
+		WARN = "",
+		INFO = "",
+		DEBUG = "",
+		TRACE = "✎",
+	  },
+	})
+EOF
