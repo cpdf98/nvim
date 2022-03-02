@@ -1,0 +1,13 @@
+set number
+syntax on
+set mouse=a
+set autochdir
+set autowriteall
+set showtabline=2
+set tabstop=4
+set shiftwidth=4
+set smartindent
+set cursorline
+colorscheme jellybeans
+set termguicolors
+set clipboard+=unnamedplus
