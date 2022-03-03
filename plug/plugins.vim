@@ -24,7 +24,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'SmiteshP/nvim-gps'
 	Plug 'https://github.com/tpope/vim-fugitive.git'
 	Plug 'https://github.com/windwp/nvim-autopairs.git'
-	Plug 'kosayoda/nvim-lightbulb'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/nvim-lsp-installer'
 	Plug 'hrsh7th/nvim-cmp'
