@@ -9,10 +9,11 @@ source ~/.config/nvim/settings/term.vim
 "plugin configurations
 source ~/.config/nvim/config/airline.vim
 source ~/.config/nvim/config/floaterm.vim
-source ~/.config/nvim/config/wilder.vim
 source ~/.config/nvim/config/signify.vim
+source ~/.config/nvim/config/wilder.vim
 
 "lua scripts
+luafile ~/.config/nvim/lua/tree.lua
 luafile ~/.config/nvim/lua/pairs.lua
 luafile ~/.config/nvim/lua/notifyP.lua
 luafile ~/.config/nvim/lua/buff.lua
