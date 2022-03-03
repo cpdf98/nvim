@@ -13,6 +13,9 @@ source ~/.config/nvim/config/wilder.vim
 source ~/.config/nvim/config/signify.vim
 
 "lua scripts
-lua require('pairs')
-lua require('notifyP')
-lua require('buff')
+luafile ~/.config/nvim/lua/pairs.lua
+luafile ~/.config/nvim/lua/notifyP.lua
+luafile ~/.config/nvim/lua/buff.lua
+luafile ~/.config/nvim/lua/lsp/lspinstaller.lua
+luafile ~/.config/nvim/lua/lsp/cmp.lua
+luafile ~/.config/nvim/lua/lsp/lspkin.lua

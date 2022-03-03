@@ -26,7 +26,15 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/windwp/nvim-autopairs.git'
 	Plug 'kosayoda/nvim-lightbulb'
 	Plug 'neovim/nvim-lspconfig'
-	Plug 'hrsh7th/nvim-compe'
+	Plug 'williamboman/nvim-lsp-installer'
+	Plug 'hrsh7th/nvim-cmp'
+	Plug 'hrsh7th/vim-vsnip'
+	Plug 'hrsh7th/vim-vsnip-integ'
+	Plug 'https://github.com/onsails/lspkind-nvim.git'
+	Plug 'https://github.com/hrsh7th/cmp-nvim-lsp.git'
+	Plug 'https://github.com/hrsh7th/cmp-vsnip.git'
+	Plug 'https://github.com/hrsh7th/cmp-path.git'
+	Plug 'hrsh7th/cmp-buffer'
 	if has('nvim') || has('patch-8.0.902')
 	  Plug 'mhinz/vim-signify'
 	else
