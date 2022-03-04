@@ -34,10 +34,11 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/hrsh7th/cmp-vsnip.git'
 	Plug 'https://github.com/hrsh7th/cmp-path.git'
 	Plug 'hrsh7th/cmp-buffer'
+	Plug 'glepnir/dashboard-nvim'
 	if has('nvim') || has('patch-8.0.902')
-	  Plug 'mhinz/vim-signify'
+  		Plug 'mhinz/vim-signify'
 	else
-	  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+  		Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
 	endif
 	if has('nvim')
 	  function! UpdateRemotePlugins(...)
