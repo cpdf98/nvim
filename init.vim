@@ -7,10 +7,12 @@ source ~/.config/nvim/settings/general.vim
 source ~/.config/nvim/settings/term.vim
 
 "plugin configurations
+source ~/.config/nvim/config/dashboard.vim
 source ~/.config/nvim/config/airline.vim
 source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/signify.vim
 source ~/.config/nvim/config/wilder.vim
+
 
 "lua scripts
 luafile ~/.config/nvim/lua/tree.lua
