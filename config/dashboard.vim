@@ -16,3 +16,5 @@ let g:dashboard_custom_shortcut={
 \ 'find_word'          : 'SPC f a',
 \ 'book_marks'         : 'SPC f b',
 \ }
+
+let g:indentLine_fileTypeExclude = ['dashboard']
