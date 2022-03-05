@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'liuchengxu/vim-clap'
 	Plug 'glepnir/dashboard-nvim'
+	Plug 'lukas-reineke/indent-blankline.nvim'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else
