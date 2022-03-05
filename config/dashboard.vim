@@ -18,3 +18,4 @@ let g:dashboard_custom_shortcut={
 \ }
 
 let g:indentLine_fileTypeExclude = ['dashboard']
+autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
