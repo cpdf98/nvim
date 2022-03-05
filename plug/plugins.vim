@@ -7,7 +7,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'akinsho/bufferline.nvim'
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'f-person/git-blame.nvim'
 	Plug 'kdheepak/lazygit.nvim'
 	Plug 'https://github.com/roxma/nvim-yarp.git'
