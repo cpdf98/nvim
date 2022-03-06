@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'https://github.com/preservim/nerdtree'
 	Plug 'https://github.com/ryanoasis/vim-devicons'
 	Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -38,6 +37,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
+	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else

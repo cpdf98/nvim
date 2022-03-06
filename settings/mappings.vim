@@ -1,4 +1,3 @@
-nnoremap <C-r> :NERDTreeToggle<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <C-l> :LazyGit<CR>
