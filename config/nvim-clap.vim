@@ -29,3 +29,4 @@ let &cpoptions = s:save_cpo
 unlet s:save_cpo
 
 let g:indentLine_fileTypeExclude = ['clap']
+

@@ -14,7 +14,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/romgrk/fzy-lua-native.git'
 	Plug 'https://github.com/nixprime/cpsm.git'
 	Plug 'https://github.com/sharkdp/fd.git'
-	Plug 'voldikss/vim-floaterm'
 	Plug 'https://github.com/xiyaowong/nvim-cursorword.git'
 	Plug 'https://github.com/alec-gibson/nvim-tetris.git'
 	Plug 'https://github.com/seandewar/nvimesweeper.git'
@@ -37,6 +36,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'liuchengxu/vim-clap'
 	Plug 'glepnir/dashboard-nvim'
 	Plug 'lukas-reineke/indent-blankline.nvim'
+	Plug 'folke/trouble.nvim'
+	Plug 'numToStr/FTerm.nvim'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else

@@ -5,7 +5,6 @@ source ~/.config/nvim/settings/general.vim
 source ~/.config/nvim/settings/term.vim
 source ~/.config/nvim/config/dashboard.vim
 source ~/.config/nvim/config/airline.vim
-source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/signify.vim
 source ~/.config/nvim/config/wilder.vim
 luafile ~/.config/nvim/lua/tree.lua
@@ -17,3 +16,4 @@ luafile ~/.config/nvim/lua/lsp/cmp.lua
 luafile ~/.config/nvim/lua/lsp/lspkin.lua
 luafile ~/.config/nvim/lua/blank.lua
 source ~/.config/nvim/config/nvim-clap.vim
+luafile ~/.config/nvim/lua/fterm.lua
