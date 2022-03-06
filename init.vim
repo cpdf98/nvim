@@ -16,4 +16,4 @@ luafile ~/.config/nvim/lua/lsp/cmp.lua
 luafile ~/.config/nvim/lua/lsp/lspkin.lua
 luafile ~/.config/nvim/lua/blank.lua
 source ~/.config/nvim/config/nvim-clap.vim
-luafile ~/.config/nvim/lua/fterm.lua
+source ~/.config/nvim/config/floaterm.vim

@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'glepnir/dashboard-nvim'
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
-	Plug 'numToStr/FTerm.nvim'
+	Plug 'voldikss/vim-floaterm'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else
