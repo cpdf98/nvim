@@ -32,7 +32,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/hrsh7th/cmp-path.git'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'nvim-lua/plenary.nvim'
-	Plug 'liuchengxu/vim-clap'
 	Plug 'glepnir/dashboard-nvim'
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
