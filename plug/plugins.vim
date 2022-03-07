@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
-	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+	Plug 'preservim/nerdtree'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else
