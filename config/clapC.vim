@@ -19,7 +19,7 @@ let s:palette.search_text = extend({ 'ctermfg': '195', 'guifg': '#CADFF3', 'cter
 let s:palette.preview = { 'ctermbg': '238', 'guibg': '#151515' }
 
 let s:palette.selected = { 'ctermfg': '81', 'guifg': '#5FD7d7', 'cterm': 'bold,underline', 'gui': 'bold,underline' }
-let s:palette.current_selection = { 'ctermbg': '236', 'guibg': '#BEAEAA', 'cterm': 'bold', 'gui': 'bold' }
+let s:palette.current_selection = { 'ctermbg': '236', 'guibg': '#151515', 'cterm': 'bold', 'gui': 'bold' }
 
 let s:palette.selected_sign = { 'ctermfg': '196', 'guifg': '#f2241f' }
 let s:palette.current_selection_sign = s:palette.selected_sign
