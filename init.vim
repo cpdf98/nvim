@@ -1,5 +1,6 @@
 "Plugins
 source ~/.config/nvim/plug/plugins.vim
+source ~/.config/nvim/config/vide.vim
 source ~/.config/nvim/settings/mappings.vim
 source ~/.config/nvim/settings/general.vim
 source ~/.config/nvim/config/dashboard.vim
