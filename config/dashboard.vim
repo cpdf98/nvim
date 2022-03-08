@@ -25,3 +25,20 @@ END
 let g:mapleader="<Space>"
 let g:indentLine_fileTypeExclude = ['dashboard']
 
+let g:dashboard_custom_section={
+  		\ 'a': {
+      		\ 'description': [' Find File'],
+      		\ 'command': 'Telescope find_files' },
+		\ 'b': {
+			\ 'description': ['ﭯ History  '],
+			\ 'command': 'Telescope old_files'},
+	  	\ 'c': {
+			\ 'description': [' New File '],
+			\ 'command': ':enew'},
+		\ 'd': {
+			\ 'description': [' init.vim '],
+			\ 'command': ':e ~/.config/nvim/init.vim'},
+		\ 'f': {
+			\ 'description': ['Exit Neovim'],
+			\ 'command': ':q'},
+  \ }
