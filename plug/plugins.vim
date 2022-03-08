@@ -37,8 +37,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
 	Plug 'preservim/nerdtree'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else

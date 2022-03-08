@@ -1,4 +1,4 @@
-let g:dashboard_default_executive ='telescope'
+let g:dashboard_default_executive ='fzf'
 
 let g:dashboard_custom_header =<< trim END
 =================     ===============     ===============   ========  ========
@@ -28,10 +28,10 @@ let g:indentLine_fileTypeExclude = ['dashboard']
 let g:dashboard_custom_section={
   		\ 'a': {
       		\ 'description': [' Find File'],
-      		\ 'command': 'Telescope find_files' },
+      		\ 'command': 'Files' },
 		\ 'b': {
 			\ 'description': ['ﭯ History  '],
-			\ 'command': 'Telescope old_files'},
+			\ 'command': 'History'},
 	  	\ 'c': {
 			\ 'description': [' New File '],
 			\ 'command': ':enew'},
