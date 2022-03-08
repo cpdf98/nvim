@@ -1,4 +1,3 @@
-"Plugins
 source ~/.config/nvim/plug/plugins.vim
 source ~/.config/nvim/config/vide.vim
 source ~/.config/nvim/settings/mappings.vim
@@ -18,3 +17,4 @@ luafile ~/.config/nvim/lua/lsp/lspkin.lua
 luafile ~/.config/nvim/lua/blank.lua
 source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/nerdtree.vim
+source ~/.config/nvim/config/clapC.vim

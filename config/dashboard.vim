@@ -1,5 +1,4 @@
-let g:dashboard_default_executive ='fzf'
-
+let g:dashboard_default_executive ='clap'
 let g:dashboard_custom_header =<< trim END
 =================     ===============     ===============   ========  ========
 \\ . . . . . . .\\   //. . . . . . .\\   //. . . . . . .\\  \\. . .\\// . . //
@@ -21,24 +20,23 @@ let g:dashboard_custom_header =<< trim END
 \   _-'                                                                `-_   /
  `''                                                                      ``'
 END
-
 let g:mapleader="<Space>"
 let g:indentLine_fileTypeExclude = ['dashboard']
-
 let g:dashboard_custom_section={
-  		\ 'a': {
-      		\ 'description': [' Find File'],
-      		\ 'command': 'Files' },
-		\ 'b': {
-			\ 'description': ['ﭯ History  '],
-			\ 'command': 'History'},
-	  	\ 'c': {
-			\ 'description': [' New File '],
-			\ 'command': ':enew'},
-		\ 'd': {
-			\ 'description': [' init.vim '],
-			\ 'command': ':e ~/.config/nvim/init.vim'},
-		\ 'f': {
-			\ 'description': ['Exit Neovim'],
-			\ 'command': ':q'},
-  \ }
+	\ 'a': {
+		\ 'description': [' Find File'],
+		\ 'command': 'Clap files ++finder=rg --ignore --hidden --files' },
+	\ 'b': {
+		\ 'description': ['ﭯ History  '],
+		\ 'command': 'Clap history'},
+	\ 'c': {
+		\ 'description': [' New File '],
+		\ 'command': ':enew'},
+	\ 'd': {
+		\ 'description': [' init.vim '],
+		\ 'command': ':e ~/.config/nvim/init.vim'},
+	\ 'f': {
+		\ 'description': ['Exit Neovim'],
+		\ 'command': ':q'},
+\ }
+
