@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
 	Plug 'https://github.com/ryanoasis/vim-devicons'
 	Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -40,6 +38,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'liuchengxu/vim-clap'
+	Plug 'nvim-lualine/lualine.nvim'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else
