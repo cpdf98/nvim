@@ -14,8 +14,8 @@ luafile ~/.config/nvim/lua/lsp/lspinstaller.lua
 luafile ~/.config/nvim/lua/lsp/cmp.lua
 luafile ~/.config/nvim/lua/lsp/lspkin.lua
 luafile ~/.config/nvim/lua/blank.lua
+luafile ~/.config/nvim/lua/lLine.lua
 source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/nerdtree.vim
 source ~/.config/nvim/config/clapC.vim
 source ~/.config/nvim/config/gBlame.vim
-luafile ~/.config/nvim/lua/lLine.lua
