@@ -1,6 +1,7 @@
 nnoremap<silent><A-i> :FloatermToggle<CR>
 tnoremap<silent><A-i> <C-\><C-n>:FloatermToggle<CR>
 
+hi Floaterm guibg=#151515
 hi FloatermBorder guibg=#151515
 
 autocmd FileType java nnoremap <buffer> <F5> :w<esc>:FloatermNew javac % && java -cp %:p:h %:t:r<CR>
