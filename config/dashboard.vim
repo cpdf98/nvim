@@ -13,7 +13,7 @@ let g:indentLine_fileTypeExclude = ['dashboard']
 let g:dashboard_custom_section={
 	\ 'a': {
 		\ 'description': [' Find File '],
-		\ 'command': 'Telescope find_files' },
+		\ 'command': 'Telescope find_files hidden=true' },
 	\ 'b': {
 		\ 'description': ['ﭯ History   '],
 		\ 'command': 'Telescope oldfiles'},
