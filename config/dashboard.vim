@@ -12,18 +12,26 @@ let g:dashboard_custom_header = [
 let g:indentLine_fileTypeExclude = ['dashboard']
 let g:dashboard_custom_section={
 	\ 'a': {
-		\ 'description': [' Find File '],
+		\ 'description': [' Find File 		SPC ff'],
 		\ 'command': 'Telescope find_files hidden=true' },
 	\ 'b': {
-		\ 'description': ['ﭯ History   '],
+		\ 'description': ['ﭯ History   		SPC fh'],
 		\ 'command': 'Telescope oldfiles'},
 	\ 'c': {
-		\ 'description': [' New File  '],
+		\ 'description': [' New File  		SPC nf'],
 		\ 'command': ':enew'},
 	\ 'd': {
-		\ 'description': [' init.vim  '],
+		\ 'description': [' init.vim  		SPC ..'],
 		\ 'command': ':e ~/.config/nvim/init.vim'},
 	\ 'f': {
-		\ 'description': ['Exit Neovim '],
+		\ 'description': ['Exit Neovim 		SPC qq'],
 		\ 'command': ':q'},
 \ }
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+nmap <leader>ff <cmd>Telescope find_files<cr>
+nmap <leader>fh <cmd>Telescope oldfiles<cr>
+nmap <leader>nf <cmd>:enew<cr>
+nmap <leader>.. <cmd>:e ~/.config/nvim/init.vim<cr>
+nmap <leader>qq <cmd>:q<cr>
