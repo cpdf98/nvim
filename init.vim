@@ -18,5 +18,4 @@ luafile ~/.config/nvim/lua/lLine.lua
 luafile ~/.config/nvim/lua/tele.lua
 source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/nerdtree.vim
-source ~/.config/nvim/config/clapC.vim
 source ~/.config/nvim/config/gBlame.vim
