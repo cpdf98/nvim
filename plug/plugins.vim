@@ -41,6 +41,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'koron/nyancat-vim'
 	if has('nvim') || has('patch-8.0.902')
   		Plug 'mhinz/vim-signify'
 	else
