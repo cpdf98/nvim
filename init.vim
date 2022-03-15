@@ -1,4 +1,3 @@
-luafile ~/.config/nvim/lua/vide.lua
 source ~/.config/nvim/plug/plugins.vim
 source ~/.config/nvim/settings/mappings.vim
 source ~/.config/nvim/settings/general.vim
@@ -16,6 +15,7 @@ lua require('lsp.lspkin')
 lua require('blank')
 lua require('lLine')
 lua require('tele')
+lua require('vide')
 source ~/.config/nvim/config/floaterm.vim
 source ~/.config/nvim/config/nerdtree.vim
 source ~/.config/nvim/config/gBlame.vim
