@@ -21,8 +21,8 @@ let g:dashboard_custom_section={
 		\ 'description': [' New File  		SPC nf'],
 		\ 'command': ':enew'},
 	\ 'd': {
-		\ 'description': [' init.vim  		SPC ..'],
-		\ 'command': ':e ~/.config/nvim/init.vim'},
+		\ 'description': [' init.lua  		SPC ..'],
+		\ 'command': ':e ~/.config/nvim/init.lua'},
 	\ 'f': {
 		\ 'description': ['Exit Neovim 		SPC qq'],
 		\ 'command': ':q'},
@@ -33,5 +33,5 @@ let mapleader=" "
 nmap <leader>ff <cmd>Telescope find_files<cr>
 nmap <leader>fh <cmd>Telescope oldfiles<cr>
 nmap <leader>nf <cmd>:enew<cr>
-nmap <leader>.. <cmd>:e ~/.config/nvim/init.vim<cr>
+nmap <leader>.. <cmd>:e ~/.config/nvim/init.lua<cr>
 nmap <leader>qq <cmd>:q<cr>
