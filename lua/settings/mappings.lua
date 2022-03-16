@@ -1,0 +1,6 @@
+vim.cmd('nnoremap <C-n> :bnext<CR>')
+vim.cmd('nnoremap <C-p> :bprevious<CR>')
+vim.cmd('nnoremap <C-l> :LazyGit<CR>')
+vim.cmd('nnoremap <C-i> :w<CR>')
+vim.cmd('nnoremap <C-h> :bd<CR>')
+vim.cmd('nnoremap <F7> :so ~/.config/nvim/init.lua<CR>')
