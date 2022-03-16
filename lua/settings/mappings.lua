@@ -1,6 +1,7 @@
-vim.cmd('nnoremap <C-n> :bnext<CR>')
-vim.cmd('nnoremap <C-p> :bprevious<CR>')
-vim.cmd('nnoremap <C-l> :LazyGit<CR>')
-vim.cmd('nnoremap <C-i> :w<CR>')
-vim.cmd('nnoremap <C-h> :bd<CR>')
-vim.cmd('nnoremap <F7> :so ~/.config/nvim/init.lua<CR>')
+local map = require('settings.utils').map
+map('n', '<C-n>', ':bnext<CR>', opts)
+map('n', '<C-p>', ':bprevious<CR>', opts)
+map('n', '<C-l', ':LazyGit<CR>', opts)
+map('n', '<C-i>', ':w<CR>', opts)
+map('n', '<C-h>', ':bd<CR>', opts)
+map('n', '<F7>', ':so ~/.config/nvim/init.lua<CR>', opts)
