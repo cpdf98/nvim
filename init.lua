@@ -1,7 +1,7 @@
 require('plugs.plugins')
+require('settings.general')
 require('settings.mappings')
 require('settings.color')
-vim.cmd('source ~/.config/nvim/vim/settings/general.vim')
 vim.cmd('source ~/.config/nvim/vim/config/dashboard.vim')
 vim.cmd('source ~/.config/nvim/vim/settings/term.vim')
 vim.cmd('source ~/.config/nvim/vim/config/signify.vim')
