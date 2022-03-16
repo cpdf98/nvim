@@ -1,0 +1,12 @@
+vim.opt.number = true
+vim.opt.syntax = 'on'
+vim.opt.autochdir = true
+vim.opt.autowriteall = true
+vim.opt.mouse = 'a'
+vim.opt.showtabline = 2
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.smartindent = true
+vim.opt.cursorline = true
+vim.opt.termguicolors = true
+vim.opt.clipboard = 'unnamedplus'
