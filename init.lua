@@ -1,4 +1,4 @@
-vim.cmd('source ~/.config/nvim/plug/plugins.vim')
+require('plugs.plugins')
 require('settings.mappings')
 require('settings.color')
 vim.cmd('source ~/.config/nvim/vim/settings/general.vim')
