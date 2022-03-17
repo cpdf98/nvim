@@ -42,11 +42,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'koron/nyancat-vim'
 	Plug 'mhinz/vim-signify'
 	Plug 'gelguy/wilder.nvim'
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
-
 
 vim.call('plug#end')
