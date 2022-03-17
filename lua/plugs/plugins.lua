@@ -13,7 +13,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'https://github.com/nixprime/cpsm.git'
 	Plug 'https://github.com/sharkdp/fd.git'
 	Plug 'https://github.com/xiyaowong/nvim-cursorword.git'
-	Plug 'https://github.com/alec-gibson/nvim-tetris.git'
 	Plug 'https://github.com/seandewar/nvimesweeper.git'
 	Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 	Plug 'https://github.com/rcarriga/nvim-notify.git'
@@ -35,8 +34,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
-	Plug('junegunn/fzf', { ['do'] = vim.fn['fzf#install']})
-	Plug 'junegunn/fzf.vim'
 	Plug 'liuchengxu/vim-clap'
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'nvim-lua/plenary.nvim'
