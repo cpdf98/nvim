@@ -35,7 +35,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
-	Plug 'preservim/nerdtree'
 	Plug('junegunn/fzf', { ['do'] = vim.fn['fzf#install']})
 	Plug 'junegunn/fzf.vim'
 	Plug 'liuchengxu/vim-clap'
@@ -46,5 +45,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'gelguy/wilder.nvim'
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
+	Plug 'ms-jpq/chadtree'
 
 vim.call('plug#end')
