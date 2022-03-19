@@ -13,7 +13,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'https://github.com/nixprime/cpsm.git'
 	Plug 'https://github.com/sharkdp/fd.git'
 	Plug 'https://github.com/xiyaowong/nvim-cursorword.git'
-	Plug 'https://github.com/seandewar/nvimesweeper.git'
 	Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 	Plug 'https://github.com/rcarriga/nvim-notify.git'
 	Plug 'SmiteshP/nvim-gps'
