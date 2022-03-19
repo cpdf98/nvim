@@ -1,5 +1,5 @@
 local Plug = vim.fn['plug#']
-vim.call('plug#begin', '~/.config/nvim/plugged')
+vim.call('plug#begin', '~/.vim/plugged')
 
 	Plug 'https://github.com/ryanoasis/vim-devicons'
 	Plug 'https://github.com/rafi/awesome-vim-colorschemes'
@@ -30,7 +30,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'glepnir/dashboard-nvim'
-	Plug 'lukas-reineke/indent-blankline.nvim'
 	Plug 'folke/trouble.nvim'
 	Plug 'voldikss/vim-floaterm'
 	Plug 'liuchengxu/vim-clap'
