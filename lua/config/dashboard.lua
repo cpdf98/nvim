@@ -1,5 +1,4 @@
 vim.g.dashboard_default_executive = 'clap'
-vim.g.indentLine_fileTypeExclude = 'dashboard'
 vim.g.dashboard_custom_header = {
 " ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗",
 " ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║",
@@ -16,4 +15,4 @@ vim.g.dashboard_custom_section={
 	d = { description = {' init.lua  		SPC ..'}, command = ':e ~/.config/nvim/init.lua'},
 	f = { description = {'Exit Neovim 		SPC qq'}, command = ':q'}
 }
-
+vim.g.indentLine_fileTypeExclude = 'dashboard'
