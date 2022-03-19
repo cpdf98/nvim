@@ -1,3 +1,4 @@
+vim.cmd([[
 call wilder#setup({'modes': [':', '/', '?']})
 
 call wilder#set_option('pipeline', [
@@ -66,3 +67,4 @@ call wilder#set_option('renderer', wilder#renderer_mux({
       \ '/': s:wildmenu_renderer,
       \ 'substitute': s:wildmenu_renderer,
       \ }))
+]])
