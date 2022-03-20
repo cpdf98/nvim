@@ -15,4 +15,3 @@ vim.g.dashboard_custom_section={
 	d = { description = {' init.lua  		SPC ..'}, command = ':e ~/.config/nvim/init.lua'},
 	f = { description = {'Exit Neovim 		SPC qq'}, command = ':q'}
 }
-vim.g.indentLine_fileTypeExclude = 'dashboard'

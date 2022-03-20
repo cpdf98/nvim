@@ -41,6 +41,5 @@ vim.call('plug#begin', '~/.vim/plugged')
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
 	Plug 'ms-jpq/chadtree'
-	Plug 'lukas-reineke/indent-blankline.nvim'
 
 vim.call('plug#end')
