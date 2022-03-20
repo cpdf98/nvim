@@ -9,6 +9,7 @@ vim.g.dashboard_custom_header = {
 }
 
 vim.g.dashboard_custom_section={
+	a = { description = {' Find File 		SPC ff'}, command = 'Clap filer'},
 	b = { description = {'ﭯ History   		SPC fh'}, command = 'Clap history'},
 	c = { description = {' New File  		SPC nf'}, command = ':enew'},
 	d = { description = {' init.lua  		SPC ..'}, command = ':e ~/.config/nvim/init.lua'},
